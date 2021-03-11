@@ -45,6 +45,25 @@ public class Libretto {
 		return risultato;
 	}
 	
+	/**
+	 * Ricerca un voto che corrirsponde al coro passato come parametro.
+	 * Se il corso non esiste restituisce null.
+	 * @param nomeCorso
+	 * @return
+	 */
+	
+	public Voto ricercacorso(String nomeCorso)
+	{
+		Voto risultato=null;
+		for(Voto v: this.voti)
+		{
+			if(v.getNomeCorso().equals(nomeCorso))
+				{risultato=v;
+					break;}
+		}
+		return risultato;
+	}
+	
 	public String toString() {
 		String s= "";
 		for(Voto v: this.voti)

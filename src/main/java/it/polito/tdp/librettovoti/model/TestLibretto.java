@@ -10,11 +10,7 @@ public class TestLibretto {
 		System.out.println("Test metodi libretto");
 		Libretto libretto= new Libretto();
 		
-		int nmax=30;
-		int numgenerato= (int)(Math.random()*nmax+1);
-		System.out.println(numgenerato);
-		
-		Voto voto1= new Voto("Analisi 1", 30, LocalDate.of(2019, 2, 15));
+		Voto voto1= new Voto("Analisi 1", 30, LocalDate.of(2018, 2, 15));
 		libretto.add(voto1);
 		Voto voto2= new Voto("Fisica 1", 27, LocalDate.of(2019, 2, 21));
 		libretto.add(voto2);
@@ -22,6 +18,10 @@ public class TestLibretto {
 		libretto.add(voto3);
 		Voto voto4= new Voto("Sistemi elettrici", 26, LocalDate.of(2019, 2, 28));
 		libretto.add(voto4);
+		Voto voto57= new Voto("Sistemi elettrici", 26, LocalDate.of(2019, 2, 28));
+		libretto.add(voto57);
+		Voto voto58= new Voto("Sistemi elettrici", 29, LocalDate.of(2019, 2, 28));
+		libretto.add(voto58);
 		Voto voto5= new Voto("Economia", 25, LocalDate.of(2020, 9, 15));
 		libretto.add(voto5);
 		Voto voto6= new Voto("Diritto", 22, LocalDate.of(2019, 6, 15));
@@ -35,13 +35,13 @@ public class TestLibretto {
 		Voto voto10= new Voto("Programmazione a oggetti", 25, LocalDate.of(2021, 2, 24));
 		libretto.add(voto10);
 		
-//		System.out.println(libretto);
+		System.out.println(libretto);
 		
 		List<Voto> venticinque= libretto.ListaVotiugualia(25);
-//		System.out.println(venticinque);
+		System.out.println(venticinque);
 		
 		Libretto lib= libretto.Librettovotiugualia(25);
-//		System.out.println(lib);
+		System.out.println(lib);
 	}
 }
 
